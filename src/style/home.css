@@ -1,0 +1,385 @@
+body {
+  background-color: #283149;
+  font-family: 'Press Start 2P';
+}
+
+button:disabled, button[disabled] {
+  cursor: not-allowed;
+  pointer-events: none;
+  color: #c0c0c0;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.title {
+  grid-area: top;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #283149;
+  color: #fff;
+  padding: 1rem 0 0;
+  text-align: center;
+}
+
+.flex-container {
+  width: 50%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+  "top top top"
+  "left content right";
+  grid-template-columns: 300px 1fr 300px;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 0px;
+  height: 100vh;
+}
+
+aside {
+  padding-left: 1rem;
+  color: #fff;
+  background-color: #000000;
+}
+
+.left {
+  grid-area: left;
+}
+
+.right {
+  grid-area: right;
+}
+
+main {
+  grid-area: content;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 0 1rem;
+}
+
+.row {
+  margin-top: 0.2rem;
+}
+
+.box {
+  float: left;
+  width: 2.5rem;
+  height: 3em;
+  margin: 0.4rem;
+  background-color: green;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.scoreBoard {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.score {
+  font-size: 2rem;
+  margin-bottom: 5rem;
+  color: yellow;
+}
+
+.scoreGuide {
+  margin-top: 0;
+}
+
+.scoreBottom {
+  color: orange;
+}
+
+.currentMove {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  padding-top: 4rem;
+  text-align: center;
+  padding-right: 1rem;
+}
+
+.moveImg {
+  font-size: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.scoreChange {
+  font-size: 2rem;
+  font-family: 'Press Start 2P';
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  width: 8rem;
+  height: 4rem;
+  padding: 1rem;
+  background-color: green;
+  color: #fff;
+  font-family: 'Press Start 2P';
+  line-height: 1.1;
+  margin: auto;
+}
+
+.btn:disabled {
+  background-color: #000000;
+  color: #000000;
+  border-color: #000000;
+}
+
+.tiredMove {
+  font-size: 0.8rem;
+  color: orange;
+}
+
+/* Media Breakpoint */
+/* Tablet */
+@media (min-width: 1024px) and (max-width: 1366px) {
+
+  main {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .container {
+    grid-template-areas:
+    "top top"
+    "content content"
+    "left right";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100vh;
+  }
+  .flex-container {
+    width: 75%;
+  }
+
+  .titleTitle {
+    font-size: 1.7rem;
+  }
+
+  .titleText {
+    font-size: 0.9rem;
+  }
+
+  .scoreBoard {
+    padding-top: 1rem;
+    text-align: center;
+  }
+
+  .scoreTitle {
+    font-size: 1rem;
+  }
+
+  .scoreGuide {
+    font-size: 0.6rem;
+  }
+  .score {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .box {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .currentMove {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    margin-right: 2rem;
+  }
+
+  .titleMoveOne {
+    font-size: 1rem;
+  }
+  .moveImg {
+    font-size: 1.7rem;
+  }
+  .moveText {
+    font-size: 1rem;
+  }
+  .scoreChange {
+    font-size: 1.2rem;
+  }
+  .tiredMove {
+    font-size: 0.6rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+
+  main {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .container {
+    grid-template-areas:
+    "top top"
+    "content content"
+    "left right";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100vh;
+  }
+  .flex-container {
+    width: 75%;
+  }
+
+  .titleTitle {
+    font-size: 1.7rem;
+  }
+
+  .titleText {
+    font-size: 0.8rem;
+  }
+
+  .scoreBoard {
+    padding-top: 1rem;
+    text-align: center;
+  }
+
+  .scoreTitle {
+    font-size: 1rem;
+  }
+
+  .scoreGuide {
+    font-size: 0.6rem;
+  }
+  .score {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .currentMove {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    margin-right: 1.5rem;
+  }
+
+  .titleMoveOne {
+    font-size: 1rem;
+  }
+  .moveImg {
+    font-size: 1.5rem;
+  }
+  .moveText {
+    font-size: 1rem;
+  }
+  .scoreChange {
+    font-size: 1.2rem;
+  }
+  .tiredMove {
+    font-size: 0.6rem;
+  }
+
+}
+
+/* Cell Phone */
+@media (min-width: 280px) and (max-width: 767.98px) {
+
+  main {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .container {
+    grid-template-areas:
+    "top top"
+    "content content"
+    "left right";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100vh;
+  }
+
+  .flex-container {
+    width: 90%;
+  }
+
+  .titleTitle {
+    font-size: 1.2rem;
+  }
+
+  .titleText {
+    font-size: 0.6rem;
+  }
+
+  .scoreBoard {
+    padding-top: 1rem;
+    text-align: center;
+  }
+
+  .scoreTitle {
+    font-size: 0.6rem;
+  }
+
+  .scoreGuide {
+    font-size: 0.4rem;
+  }
+  .score {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .grid {
+    padding: 0 0.2rem;
+  }
+
+  .box {
+    width: 1.7rem;
+    height: 1.9rem;
+    margin: 0.2rem;
+    padding: 0.2rem;
+  }
+
+  .currentMove {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-right: 0.2rem;
+  }
+
+  .titleMoveOne {
+    font-size: 0.6rem;
+  }
+  .moveImg {
+    font-size: 1.2rem;
+  }
+  .moveText {
+    font-size: 0.7rem;
+  }
+  .scoreChange {
+    font-size: 0.8rem;
+  }
+  .tiredMove {
+    font-size: 0.4rem;
+  }
+}
