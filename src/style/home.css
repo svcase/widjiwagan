@@ -35,7 +35,8 @@ p {
   display: grid;
   grid-template-areas:
   "top top top"
-  "left content right";
+  "left content right"
+  "footer footer footer";
   grid-template-columns: 300px 1fr 300px;
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 0px;
@@ -54,6 +55,19 @@ aside {
 
 .right {
   grid-area: right;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.footer {
+  background-color: #000000;
+  color: #fff;
+  font-size: 0.5rem;
+  text-align: center;
+  font-weight: 300;
+  font-family: sans-serif;
 }
 
 main {
@@ -172,7 +186,8 @@ main {
     grid-template-areas:
     "top top"
     "content content"
-    "left right";
+    "left right"
+    "footer footer";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     height: 100vh;
@@ -245,7 +260,8 @@ main {
     grid-template-areas:
     "top top"
     "content content"
-    "left right";
+    "left right"
+    "footer footer";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     height: 100vh;
@@ -315,7 +331,8 @@ main {
     grid-template-areas:
     "top top"
     "content content"
-    "left right";
+    "left right"
+    "footer footer";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     height: 100vh;

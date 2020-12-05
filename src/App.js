@@ -6,6 +6,7 @@ import Title from './components/title.js'
 import Grid from './components/grid.js';
 import ScoreBoard from './components/scoreboard.js';
 import CurrentMove from './components/currentmove.js';
+import Footer from './components/footer.js';
 
 const idArray = [];
 
@@ -478,6 +479,9 @@ function clickGameBtn() {
           <aside className='right'>
             <CurrentMove name={moveTitle} value={currentMove} add={scoreMove} emoji={moveEmoji} color={scoreColor} show={clickGameBtn} tired={tiredMove}/>
           </aside>
+          <footer className='footer'>
+            <Footer />
+          </footer>
       </div>
     );
 };
