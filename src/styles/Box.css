@@ -1,0 +1,35 @@
+.box {
+    float: left;
+    width: 2.5rem;
+    height: 3em;
+    margin: 0.4rem;
+    background-color: green;
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+button:disabled, button[disabled] {
+    cursor: not-allowed;
+    pointer-events: none;
+    color: #c0c0c0;
+  }
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .box {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+
+  }
+
+@media (min-width: 280px) and (max-width: 767.98px) {
+    .box {
+      width: 1.7rem;
+      height: 1.9rem;
+      margin: 0.2rem;
+      padding: 0.2rem;
+    }
+  }

@@ -1,0 +1,116 @@
+.currentMove {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding-top: 4rem;
+    text-align: center;
+    padding-right: 1rem;
+  }
+
+.moveImg {
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+
+.scoreChange {
+    font-size: 2rem;
+    font-family: 'Press Start 2P';
+  }
+
+.tiredMove {
+    font-size: 0.8rem;
+    color: orange;
+  }
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 8rem;
+    height: 4rem;
+    padding: 1rem;
+    background-color: green;
+    color: #fff;
+    font-family: 'Press Start 2P';
+    line-height: 1.1;
+    margin: auto;
+    border: none;
+  }
+  
+.btn:disabled {
+    background-color: #000000;
+    color: #000000;
+    border-color: #000000;
+  }
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .currentMove {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    margin-right: 2rem;
+  }
+  .moveImg {
+    font-size: 1.7rem;
+  }
+  .scoreChange {
+    font-size: 1.2rem;
+  }
+  .tiredMove {
+    font-size: 0.6rem;
+  }
+  .titleMoveOne {
+    font-size: 1rem;
+  }
+  .moveText {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  .currentMove {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    margin-right: 1.5rem;
+  }
+  .moveImg {
+    font-size: 1.5rem;
+  }
+  .scoreChange {
+    font-size: 1.2rem;
+  }
+  .tiredMove {
+    font-size: 0.6rem;
+  }
+  .titleMoveOne {
+    font-size: 1rem;
+  }
+  .moveText {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 767.98px) {
+  .currentMove {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-right: 0.2rem;
+  }
+  .moveImg {
+    font-size: 1.2rem;
+  }
+  .scoreChange {
+    font-size: 0.8rem;
+  }
+  .tiredMove {
+    font-size: 0.4rem;
+  }
+  .titleMoveOne {
+    font-size: 0.6rem;
+  }
+  .moveText {
+    font-size: 0.7rem;
+  }
+}
